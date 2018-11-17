@@ -29,7 +29,6 @@ services:
         - TZ=<timezone>
       volumes:
         - ./deluge/downloads:/config
-        - ./deluge/downloads:/config
         - ./deluge/downloads:/downloads
       mem_limit: 4096m
       restart: unless-stopped
