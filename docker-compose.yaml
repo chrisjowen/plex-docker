@@ -30,6 +30,4 @@ services:
       volumes:
         - ./deluge/downloads:/config
         - ./deluge/downloads:/downloads
-      mem_limit: 4096m
-      restart: unless-stopped
 # ssh -L 32400:localhost:32400 server1
