@@ -15,6 +15,7 @@ services:
       - "32469:32469/udp" 
       - "5353:5353/udp" 
       - "1900:1900/udp"
+    network_mode: host
     environment:
       - VERSION=latest
     
@@ -23,3 +24,5 @@ services:
     network_mode: host
     volumes:
       - ./deluge/downloads:/downloads 
+
+# ssh -L 32400:localhost:32400 server1
